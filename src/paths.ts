@@ -1,0 +1,25 @@
+export const paths = {
+  home: '/',
+  auth: { signIn: '/auth/sign-in', signUp: '/auth/sign-up', resetPassword: '/auth/reset-password' },
+  dashboard: {
+    overview: '/dashboard', // 👈 agregado para que GuestGuard no falle
+    inicio: '/dashboard',
+    account: '/dashboard/account',
+    customers: '/dashboard/customers',
+    integrations: '/dashboard/integrations',
+    settings: '/dashboard/settings',
+    alumnos: '/dashboard/alumnos',
+    alumnosNuevo: '/dashboard/alumnos/nuevo',
+    alumnosEditar: '/dashboard/alumnos/editar/:id',
+    docentes: '/dashboard/docentes',
+    docentesNuevo: '/dashboard/docentes/nuevo',
+    docentesEditar: '/dashboard/docentes/editar/:id',
+    grados: '/dashboard/grados',
+    gradosNuevo: '/dashboard/grados/nuevo',
+    gradosEditar: '/dashboard/grados/editar/:id',
+    materias: '/dashboard/materias',
+    secciones: '/dashboard/secciones',
+    notas: '/dashboard/notas',
+  },
+  errors: { notFound: '/errors/not-found' },
+} as const;
